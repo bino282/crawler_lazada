@@ -84,6 +84,7 @@ def get(link_cat,num_page):
         p['name'] = product['name']
         p['price'] = product['offers']['price']
         p['img_src'] = product['image']
+        p['link_cat'] = link_cat
         urllib.request.urlretrieve(p['img_src'],'./images/'+p['id']+'.jpg')
         p['url'] = product['url']
         all_products.append(p)
