@@ -97,6 +97,7 @@ print(links_cat)
 total_products = []
 num_pages = 100
 for link_cat in links_cat:
+    print(link_cat)
     for i in range(1,num_pages+1):
         print("Page : ",i)
         time.sleep(random.uniform(2, 5))
